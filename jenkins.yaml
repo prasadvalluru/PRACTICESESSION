@@ -12,10 +12,10 @@
       state: present
   - name: download jenkins to webapps folder
     geturl:
-       url:  http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war-stable/2.60.2/jenkins.war
-       dest: /usr/share/tomcat/webapps/
+      url:  http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war-stable/2.60.2/jenkins.war
+      dest: /usr/share/tomcat/webapps/
   - name: enable and start tomcat
     service:
-        name: tomcat
-        state: started
-        enabled: yes
+      name: tomcat
+      state: started
+      enabled: yes
